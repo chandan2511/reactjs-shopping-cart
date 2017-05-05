@@ -12,9 +12,7 @@ class Cart extends React.Component{
     render(){
         const {items,total,currency,itemsList}=this.props;
         console.log(itemsList);
-        const itemCount = itemsList.reduce(function(acc, val) {
-                                        return acc + 1;
-                                    }, 0);
+        const itemCount = itemsList.length;
         
         return (
         <div>
